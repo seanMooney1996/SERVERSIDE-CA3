@@ -24,7 +24,7 @@
     </head>
     <body class="antialiased">
         <div class="topnav">
-            <a class="active" href="#home">Home</a>
+            <a class="active" href="#home">1234</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
