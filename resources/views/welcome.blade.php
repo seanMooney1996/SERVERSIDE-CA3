@@ -24,10 +24,20 @@
     </head>
     <body class="antialiased">
         <div class="topnav">
-            <a class="active" href="#home">Home</a>
+            <a class="active" href="#home">Dashboard</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
+        <div class="div_NavBar">
+            <div class="navBar_links">
+                <a class="active" href="#home">Home</a>
+                <a href="#contact">Log In</a>
+                <a href="#about">Sign Up</a>
+            </div>
+                
+            <div class="navBar_filters">
+                <div> There's filtering going on here laddie!</div>
+            </div>
         </div>
     </body>
 </html>
