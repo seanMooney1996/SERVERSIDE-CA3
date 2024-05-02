@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\Login;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', Login::class);
+Route::get('/login',  [LoginController::class, 'showLoginForm']);
 Route::middleware(['web'])->group(function () {
     Auth::routes();
 });
