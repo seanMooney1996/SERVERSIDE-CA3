@@ -25,7 +25,7 @@
     <body class="antialiased">
         <div class="div_NavBar">
             <div class="navBar_links">
-                <a href="#login">Log In</a>
+                <a href="login">Log In</a>
                 <a href="#signup">Sign Up</a>
                 <a href="#cards">Cards</a>
                 <a class="active" href="#home">Home</a>
