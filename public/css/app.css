@@ -63,18 +63,55 @@
   max-width: 25vh;
 }
 
+
+
+
+
 .button_publisherContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.firstHomeButton {
+  background-color: #523f36;
+  color: white;
+  padding: 1.5vh 2.5vh;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.firstHomeButton:hover {
+  background-color: #2e231e;
+}
+
+.secondHomeButton{
+  background-color: #2f6589;
+  color: white;
+  padding: 1.5vh 2.5vh;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secondHomeButton:hover {
+  background-color: rgb(24, 53, 72);
+}
+
+
+
+
+
 .div_publisherTextContainer {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
 }
-
 
 .h2_publisher {
   font-family: Arial, Helvetica, sans-serif;
@@ -89,3 +126,20 @@
 }
 
 
+
+
+
+/* footer */
+
+.div_footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.footerHelperDiv{
+  border-left: 1px solid black;
+  width: 20vh;
+}
