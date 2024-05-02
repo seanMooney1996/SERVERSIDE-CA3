@@ -23,21 +23,32 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="topnav">
-            <a class="active" href="#home">Dashboard</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
         <div class="div_NavBar">
             <div class="navBar_links">
+                <a href="#login">Log In</a>
+                <a href="#signup">Sign Up</a>
+                <a href="#cards">Cards</a>
                 <a class="active" href="#home">Home</a>
-                <a href="#contact">Log In</a>
-                <a href="#about">Sign Up</a>
-            </div>
-                
-            <div class="navBar_filters">
-                <div> There's filtering going on here laddie!</div>
             </div>
         </div>
+
+
+        <div>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+            <h1>wgewf</h1>
+        </div>
+
     </body>
 </html>
