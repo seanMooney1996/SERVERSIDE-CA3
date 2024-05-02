@@ -1,28 +1,30 @@
 .div_NavBar {
-    background-color: #222831;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: #222831;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0; 
+}
+
   
   .navBar_links a {
-    float: left;
-    color: #f2f2f2;
+    float: right;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    padding: 1%;
   }
   
   .navBar_links a:hover {
-    background-color: #ddd;
+    background-color: #EEEEEE;
     color: black;
   }
   
-  .navBar_links a.active {
+ .navBar_links a.active {
     background-color: red;
     color: white;
   }
+
 
 
   .navBar_filters{
