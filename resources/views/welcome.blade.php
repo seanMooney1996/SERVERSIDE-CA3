@@ -23,6 +23,11 @@
         </style>
     </head>
     <body class="antialiased">
+        <div class="topnav">
+            <a class="active" href="#home">Dashboard</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         <div class="div_NavBar">
             <div class="navBar_links">
                 <a class="active" href="#home">Home</a>
