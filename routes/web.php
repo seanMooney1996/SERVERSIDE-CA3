@@ -26,6 +26,9 @@ Route::middleware(['web'])->group(function () {
 });
 
 
+Route::get('/login', [LoginController::class, 'showLoginForm']);
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+
 Route::get('/register', [RegisterController::class, 'showRegisterForm']);
 Route::post('/register', [RegisterController::class, 'register'])->name('register');
 
