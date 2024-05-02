@@ -15,6 +15,7 @@
         <link href="../public/app.css" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-EXAMPLEHASH" crossorigin="anonymous" />
 
         <style>
             body {
@@ -23,17 +24,72 @@
         </style>
     </head>
     <body class="antialiased">
-     
         <div class="div_NavBar">
             <div class="navBar_links">
-                <a class="active" href="#home">Home</a>
-                <a href="#contact">Log In</a>
-                <a href="#about">Sign Up</a>
+                <a href="login">Log In</a>
+                <a href="register">Sign Up</a>
+                <a href="#cards">Cards</a>
+                <a class="active" href="">Home</a>
             </div>
-                
-            <div class="navBar_filters">
-                <div> There's filtering going on here laddie!</div>
+        </div>
+
+
+
+        <div>
+            <img class="image_topHome" src="{{ asset('images/topImage.jpg') }}" alt="Magic: the Gathering">
+        </div>
+        
+
+
+        <div class="div_publisherContainer">
+
+            <div class="div_publisherTextContainer" >
+                <h2 class="h2_publisher" >Are you ready to dive into world of Magic: The Gathering?</h2>
+                <h5 class="h4_publisher" >Browse our vast library of interesting Magic: The Gathering card pieces.</h4>
             </div>
+            <div class="button_publisherContainer">
+                 <button class="firstHomeButton">Click here to explore!</button>
+            </div>
+            
+        </div>
+
+
+
+        <div>
+            <img class="image_topHome" src="{{ asset('images/mtg_top2.jpg') }}" alt="Magic: the Gathering">
+        </div>
+
+
+
+          
+        <div class="div_publisherContainer">
+
+            <div class="div_publisherTextContainer" >
+                <h2 class="h2_publisher" >Are you ready to unleash your creativity?</h2>
+                <h5 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
+            </div>
+            <div class="button_publisherContainer">
+                 <button class="secondHomeButton">Click here to join!</button>
+            </div>
+        </div>
+
+        <div>
+            <img class="image_topHome" src="{{ asset('images/mtg_top3.jpg') }}" alt="Magic: the Gathering">
+        </div>
+
+        <div class="div_footer">
+
+           <div>
+                <p href="#">*link to Browse Cards*</p>
+                <p href="#">*link to Publish Cards*</p>
+                <p href="#">*link to Log Out*</p>
+           </div>
+           <div>
+                <div class="div_publisherTextContainer" >
+                <h2 class="h2_publisher" >Thank you for visiting our website.</h2>
+                <h5 class="h4_publisher" >We hope we had made you happy with our Magic: The Gathering card display.</h4>
+                </div>
+           </div>
         </div>
     </body>
 </html>
