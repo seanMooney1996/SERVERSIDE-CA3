@@ -20,14 +20,14 @@
     color: black;
   }
   
- .navBar_links a.active {
-    background-color: red;
-    color: white;
+  .navBar_links a.active {
+    background-color: #76ABAE;
   }
-
 
 
   .navBar_filters{
     background-color: #31363F;
     overflow: hidden;
   }
+
+
