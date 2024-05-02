@@ -8,8 +8,8 @@ use Livewire\Component;
 class Login extends Component
 {
 
-    public $email;
-    public $password;
+    public string $email = '';
+    public string $password = '';
     public function render()
     {
 
@@ -24,7 +24,7 @@ class Login extends Component
         ];
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/home');
         } else {
             session()->flash('error', 'Invalid credentials. Please try again.');
         }

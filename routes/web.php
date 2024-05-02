@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Auth\EmailVerificationRequest;
+use App\Http\Livewire\Login;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +18,8 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', Login::class);
 Route::middleware(['web'])->group(function () {
     Auth::routes();
 });
