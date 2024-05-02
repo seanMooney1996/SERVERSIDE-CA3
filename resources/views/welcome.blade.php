@@ -49,11 +49,8 @@
             <div class="button_publisherContainer">
                 <button>Click here to explore!</button>
             </div>
-            <div>
-                <img class="image_mtg_hand" src="{{ asset('images/mtg_hand.jpg') }}" alt="Magic: the Gathering">
-            </div>
+            
         </div>
-
 
 
 
@@ -73,9 +70,7 @@
             <div class="button_publisherContainer">
                 <button>Click here to join!</button>
             </div>
-            <div>
-                <img class="image_mtg_hand" src="{{ asset('images/mtg_hand.jpg') }}" alt="Magic: the Gathering">
-            </div>
+         
         </div>
 
 
@@ -83,6 +78,20 @@
 
         <div>
             <img class="image_topHome" src="{{ asset('images/mtg_top3.jpg') }}" alt="Magic: the Gathering">
+        </div>
+
+        <div class="div_publisherContainer">
+
+            <div class="div_publisherTextContainer" >
+                <h2 class="h2_publisher" >*Here is gonna be the footer big man, here is*</h2>
+                <h5 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
+            </div>
+            <div class="button_publisherContainer">
+                <button>Click here to join!</button>
+            </div>
+            <div>
+                <img class="image_mtg_hand" src="{{ asset('images/mtg_hand.jpg') }}" alt="Magic: the Gathering">
+            </div>
         </div>
 
 
