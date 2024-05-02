@@ -31,12 +31,32 @@
 }
 
 
+
+
+/* Home page
+ */
+
+
+ .image_topHome{
+  max-width: 220vh;
+ }
+
+
+
+
+
+
+
+
+
 /* become a publisher div */
+
 
 .div_publisherContainer {
   margin-top: 2vh;
   display: flex;
   justify-content: space-evenly;
+  font-size: 20px;
 }
 
 .image_mtg_hand {
@@ -67,3 +87,5 @@
   font-style: italic;
 
 }
+
+

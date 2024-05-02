@@ -33,13 +33,43 @@
         </div>
 
 
+
+        <div>
+            <img class="image_topHome" src="{{ asset('images/topImage.jpg') }}" alt="Magic: the Gathering">
+        </div>
         
+
+
         <div class="div_publisherContainer">
 
-        <div class="div_publisherTextContainer" >
-            <h2 class="h2_publisher" >Are you ready to unleash your creativity?</h2>
-            <h5 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
+            <div class="div_publisherTextContainer" >
+                <h2 class="h2_publisher" >Are you ready to dive into world of Magic: The Gathering?</h2>
+                <h5 class="h4_publisher" >Browse our vast library of interesting Magic: The Gathering card pieces.</h4>
+            </div>
+            <div class="button_publisherContainer">
+                <button>Click here to explore!</button>
+            </div>
+            <div>
+                <img class="image_mtg_hand" src="{{ asset('images/mtg_hand.jpg') }}" alt="Magic: the Gathering">
+            </div>
         </div>
+
+
+
+
+        <div>
+            <img class="image_topHome" src="{{ asset('images/mtg_top2.jpg') }}" alt="Magic: the Gathering">
+        </div>
+
+
+
+          
+        <div class="div_publisherContainer">
+
+            <div class="div_publisherTextContainer" >
+                <h2 class="h2_publisher" >Are you ready to unleash your creativity?</h2>
+                <h5 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
+            </div>
             <div class="button_publisherContainer">
                 <button>Click here to join!</button>
             </div>
@@ -48,22 +78,13 @@
             </div>
         </div>
 
+
+
+
         <div>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
-            <h1>wgewf</h1>
+            <img class="image_topHome" src="{{ asset('images/mtg_top3.jpg') }}" alt="Magic: the Gathering">
         </div>
+
 
     </body>
 
