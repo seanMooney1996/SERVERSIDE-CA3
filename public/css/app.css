@@ -143,3 +143,32 @@
   border-left: 1px solid black;
   width: 20vh;
 }
+
+
+
+
+/* card page */
+
+.div_cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: 3vh;
+}
+
+.div_cardsRow {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.div_CardSingle {
+  width: 30vh;
+  height: 45vh; 
+  border: 1px solid #cecbcb;
+  border-radius: 2vh;
+  background-color: #f3f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
