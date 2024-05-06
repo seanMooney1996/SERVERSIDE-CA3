@@ -21,18 +21,50 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+
         </style>
     </head>
     <body class="antialiased">
         <div class="div_NavBar">
             <div class="navBar_links">
+                <a href="welcome" class="leftie" >Publish your card</a>
+
                 <a href="login">Log In</a>
                 <a href="register">Sign Up</a>
                 <a class="active" href="cards">Cards</a>
                 <a href="welcome" href="">Home</a>
             </div>
+
         </div>
 
 
+        <div>
+
+
+        <?php
+        $cards = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
+
+        ?>
+        <div class="div_cardContainer">
+
+            <?php
+            $num_cards = sizeof($cards);
+            for ($i = 0; $i < $num_cards; $i++) {
+
+                if ($i % 4 == 0) {
+
+                    if ($i != 0) {
+                        ?>
+                        </div>
+                    <?php } ?>
+
+                    <div class="div_cardsRow">
+
+                <?php } ?>
+                <div class="div_CardSingle">
+                </div>
+            <?php } ?>
+        </div>
+    </div>
     </body>
 </html>
