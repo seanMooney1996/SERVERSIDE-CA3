@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CardController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
@@ -48,9 +49,7 @@ Route::get('/addNewCard', function () {
     return view('addNewCard');
 });
 
-
-
-
+Route::post('/addNewCard', [CardController::class, 'store'])->name('addNewCard.store');
 
 
 
