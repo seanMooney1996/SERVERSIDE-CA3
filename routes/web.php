@@ -24,10 +24,36 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+// cards
 
 Route::get('/cards', function () {
     return view('cards');
 });
+
+// keep reading
+
+Route::get('/keepReading', function () {
+    return view('keepReading');
+});
+
+// edit
+
+Route::get('/editCard', function () {
+    return view('editCard');
+});
+
+// add
+
+Route::get('/addNewCard', function () {
+    return view('addNewCard');
+});
+
+
+
+
+
+
+
 
 Route::get('/login',  [LoginController::class, 'showLoginForm']);
 Route::middleware(['web'])->group(function () {

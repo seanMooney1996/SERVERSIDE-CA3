@@ -31,7 +31,8 @@
     <body class="antialiased">
         <div class="div_NavBar">
             <div class="navBar_links">
-                <a href="addNewCard" class="leftie" href>Publish your card</a>
+                <a href="welcome" class="leftie" >Keep Reading bbygrl</a>
+
                 <a href="login">Log In</a>
                 <a href="register">Sign Up</a>
                 <a class="active" href="cards">Cards</a>
@@ -39,39 +40,5 @@
             </div>
         </div>
 
-        <div>
-        <?php
-        $cards = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
-        ?>
-        <div class="div_cardContainer">
-            <?php
-            $num_cards = sizeof($cards);
-            for ($i = 0; $i < $num_cards; $i++) {
-                if ($i % 4 == 0) {
-                    if ($i != 0) {
-                        ?>
-                        </div>
-                    <?php } ?>
-                    <div class="div_cardsRow">
-                <?php } ?>
-                <div class="div_CardSingle">
-                        <div class="div_CardSingleImage">
-                            *Image here: 189x147 dimensions bbygrl*
-                        </div>
-
-                    <div class="div_CardSingleAttributes">
-                        <p>Name:</p>
-                        <p>Published by:</p>
-                    </div>    
-                
-                    <div class="div_CardSingleButtons">
-                        <a class="btn_editCard" title="Edit"  href="editCard"><i class="fa fa-pencil"></i></a>
-                        <a class="btn_deleteCard" title="Delete"><i class="fa fa-trash-o"></i></a>
-                        <a class="btn_deleteCard" title="Keep reading" href="keepReading">...</a>
-                    </div>
-                </div>
-            <?php } ?>
-        </div>
-    </div>
     </body>
 </html>
