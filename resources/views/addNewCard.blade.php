@@ -31,7 +31,6 @@
     <body class="antialiased">
         <div class="div_NavBar">
             <div class="navBar_links">
-                <a href="welcome" class="leftie" >Add new Card</a>
 
                 <a href="login">Log In</a>
                 <a href="register">Sign Up</a>
@@ -40,5 +39,38 @@
             </div>
         </div>
 
+        <div class="div_keepReadingContainer">
+            <h1>Add Card</h1>
+
+        <form>
+
+        <div class="div_CardSingleKeepReading">
+                    <div class="div_CardSingleAttributesKeepReading">
+                    <input type="text" id="name" name="name" placeholder="Name..." required>
+                    </div>
+
+                    <div class="div_CardSingleImageKeepReading">
+                        *Image here: 189x147 dimensions bbygrl*
+                    </div>
+
+                    <div class="div_CardSingleAttributes">
+
+                        <div class="div_CardSingleDescription">
+                            <textarea id="description" name="description" placeholder="Enter your description here..." required></textarea>
+                        </div>
+
+                        <div class="div_keepReadingPT">
+                            <p><input type="text" id="power" name="power" placeholder="Power..." required>
+                            </p>
+                            <p><input type="text" id="toughness" name="toughness" placeholder="Toughness..." required>
+                            </p>
+                        </div>
+                        <br/>
+                        <p><input type="text" id="published" name="published" placeholder="Published by..." required></p>
+                    </div>    
+                </div>
+                <button type="submit" class="btn_editFormSubmit">Submit</button>
+                </form>
+        </div>        
     </body>
 </html>
