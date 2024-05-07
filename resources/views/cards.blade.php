@@ -17,6 +17,10 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-EXAMPLEHASH" crossorigin="anonymous" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
@@ -34,34 +38,35 @@
                 <a class="active" href="cards">Cards</a>
                 <a href="welcome" href="">Home</a>
             </div>
-
         </div>
 
-
         <div>
-
-
         <?php
         $cards = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
-
         ?>
         <div class="div_cardContainer">
-
             <?php
             $num_cards = sizeof($cards);
             for ($i = 0; $i < $num_cards; $i++) {
-
                 if ($i % 4 == 0) {
-
                     if ($i != 0) {
                         ?>
                         </div>
                     <?php } ?>
-
                     <div class="div_cardsRow">
-
                 <?php } ?>
                 <div class="div_CardSingle">
+                        <div class="div_CardSingleImage">
+                            *Image here*
+                        </div>
+
+
+
+                
+                    <div class="div_CardSingleButtons">
+                        <button class="btn_editCard"><i class="fa fa-pencil"></i></button>       
+                        <button class="btn_deleteCard"><i class="fa fa-trash-o"></i></button>   
+                    </div>
                 </div>
             <?php } ?>
         </div>
