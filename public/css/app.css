@@ -166,7 +166,7 @@
 
 .div_CardSingle {
   width: 30vh;
-  height: 45vh; 
+  height: 42vh; 
   border: 1px solid #cecbcb;
   border-radius: 2vh;
   background-color: #f3f1f1;
@@ -188,13 +188,13 @@
 .div_CardSingleButtons {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .btn_editCard{
   background-color: #0cb4bd;
   color: white;
-  padding: 1.5vh 2.5vh;
+  padding: 1vh 2vh;
   font-size: 18px;
   border: none;
   border-radius: 5px;
@@ -209,7 +209,7 @@
 .btn_deleteCard{
   background-color: #d70505;
   color: white;
-  padding: 1.5vh 2.5vh;
+  padding: 1vh 2vh;
   font-size: 18px;
   border: none;
   border-radius: 5px;
@@ -225,7 +225,14 @@
 
 
 .div_CardSingleImage{
-  min-height: 20vh;
+    min-height: 20vh;
     margin: 2vh;
     border: 1px solid black;
 }
+
+.div_CardSingleAttributes{
+  margin: 2vh;
+}
+
+
+
