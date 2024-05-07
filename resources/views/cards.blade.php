@@ -57,15 +57,18 @@
                 <?php } ?>
                 <div class="div_CardSingle">
                         <div class="div_CardSingleImage">
-                            *Image here*
+                            *Image here: 189x147 dimensions bbygrl*
                         </div>
 
-
-
+                    <div class="div_CardSingleAttributes">
+                        <p>Name:</p>
+                        <p>Published by:</p>
+                    </div>    
                 
                     <div class="div_CardSingleButtons">
-                        <button class="btn_editCard"><i class="fa fa-pencil"></i></button>       
-                        <button class="btn_deleteCard"><i class="fa fa-trash-o"></i></button>   
+                        <button class="btn_editCard" title="Edit"><i class="fa fa-pencil"></i></button>
+                        <button class="btn_deleteCard" title="Delete"><i class="fa fa-trash-o"></i></button>
+                        <button class="btn_deleteCard" title="Keep reading">...</button>
                     </div>
                 </div>
             <?php } ?>
