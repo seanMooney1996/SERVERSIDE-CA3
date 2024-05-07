@@ -16,6 +16,10 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
