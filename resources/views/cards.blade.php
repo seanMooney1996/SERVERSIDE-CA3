@@ -409,40 +409,26 @@
 </div>
 
 <div>
-    <?php
-    $cards = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
-    ?>
     <div class="div_cardContainer">
-        <?php
-        $num_cards = sizeof($cards);
-        for ($i = 0;
-        $i < $num_cards;
-        $i++) {
-        if ($i % 4 == 0) {
-        if ($i != 0) {
-        ?>
-    </div>
-<?php } ?>
-    <div class="div_cardsRow">
-        <?php } ?>
-        <div class="div_CardSingle">
-            <div class="div_CardSingleImage">
-                *Image here: 189x147 dimensions bbygrl*
-            </div>
+        <div class="div_cardContainer">
+            @foreach($cards as $card)
+            <div class="div_CardSingle">
+                <div class="div_CardSingleImage">
+                    <?php $imageData = base64_encode($card->image_data); ?>
+                    <img src="data:image/jpeg;base64,{{ $imageData }}" alt="Card Image">
+                </div>
 
-            <div class="div_CardSingleAttributes">
-                <p>Name:</p>
-                <p>Published by:</p>
-            </div>
+                <div class="div_CardSingleAttributes">
+                    <p>Name: {{ $card->name }}</p>
+                    <p>Published by: {{ $card->user->name }}</p>
+                </div>
 
-            <div class="div_CardSingleButtons">
-                <a class="btn_editCard" title="Edit" href="editCard"><i class="fa fa-pencil"></i></a>
-                <a class="btn_deleteCard" title="Delete"><i class="fa fa-trash-o"></i></a>
-                <a class="btn_deleteCard" title="Keep reading" href="keepReading">...</a>
+                <div class="div_CardSingleButtons">
+                    <!-- Your Card Buttons Here -->
+                </div>
             </div>
+            @endforeach
         </div>
-        <?php } ?>
     </div>
-</div>
 </body>
 </html>
