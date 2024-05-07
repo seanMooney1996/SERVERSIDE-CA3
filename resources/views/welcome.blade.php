@@ -69,7 +69,7 @@
                 <h5 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
             </div>
             <div class="button_publisherContainer">
-                 <a class="secondHomeButton">Click here to join!</a>
+                 <a class="secondHomeButton" href="addNewCard">Publish a new card!</a>
             </div>
         </div>
 

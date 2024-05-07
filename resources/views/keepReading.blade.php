@@ -40,5 +40,35 @@
             </div>
         </div>
 
+        <div class="div_keepReadingContainer">
+        <div class="div_CardSingleKeepReading">
+                    <div class="div_CardSingleAttributesKeepReading">
+                    <h3>Name:</h3>
+                    </div>
+
+                    <div class="div_CardSingleImageKeepReading">
+                        *Image here: 189x147 dimensions bbygrl*
+                    </div>
+
+                    <div class="div_CardSingleAttributes">
+                    
+
+                        <div class="div_CardSingleDescription">
+                            *Description bbygrl*
+                        </div>
+                     
+
+                        <div class="div_keepReadingPT">
+                            <p>Power / Toughness</p>
+                        </div>
+                        <br/>
+                        <p>Published by:</p>
+
+                    </div>    
+                
+                
+        </div>
+        </div>        
+
     </body>
 </html>
