@@ -15,19 +15,27 @@ class CardController extends Controller
             'description' => 'required',
             'power' => 'required',
             'toughness' => 'required',
-            'image_data' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image_data' => 'required|image|mimes:jpeg,png,jpg,gif|max:10000',
         ]);
 
-         $card = new MagicCard();
-         $card->name = $request->name;
-         $card->description = $request->description;
-         $card->power = $request->power;
-         $card->toughness = $request->toughness;
-         $card->image_data = $request->file('image_data')->store('images', 'public');
-         $card->user_id = auth()->id();
-         $card->save();
+
+        $imageData = file_get_contents($request->file('image_data')->getRealPath());
+        $card = new MagicCard();
+        $card->name = $request->name;
+        $card->description = $request->description;
+        $card->power = $request->power;
+        $card->toughness = $request->toughness;
+        $card->image_data = $imageData;
+        $card->user_id = auth()->id();
+        $card->save();
 
         return redirect()->intended('/cards');
 
+    }
+
+    public function getAllCards()
+    {
+        $cards = MagicCard::all();
+        return view('cards', ['cards' => $cards]);
     }
 }

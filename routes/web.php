@@ -27,9 +27,7 @@ Route::get('/welcome', function () {
 
 // cards
 
-Route::get('/cards', function () {
-    return view('cards');
-});
+Route::get('/cards', [CardController::class, 'getAllCards']);
 
 // keep reading
 
@@ -44,10 +42,10 @@ Route::get('/editCard', function () {
 });
 
 // add
-
 Route::get('/addNewCard', function () {
     return view('addNewCard');
 });
+
 
 Route::post('/addNewCard', [CardController::class, 'store'])->name('addNewCard.store');
 
