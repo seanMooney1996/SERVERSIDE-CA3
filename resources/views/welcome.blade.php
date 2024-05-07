@@ -48,7 +48,7 @@
                 <h5 class="h4_publisher" >Browse our vast library of interesting Magic: The Gathering card pieces.</h4>
             </div>
             <div class="button_publisherContainer">
-                 <button class="firstHomeButton">Click here to explore!</button>
+                 <a class="firstHomeButton" href="cards">Click here to explore!</a>
             </div>
             
         </div>
@@ -69,7 +69,7 @@
                 <h5 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
             </div>
             <div class="button_publisherContainer">
-                 <button class="secondHomeButton">Click here to join!</button>
+                 <a class="secondHomeButton">Click here to join!</a>
             </div>
         </div>
 

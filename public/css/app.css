@@ -180,3 +180,52 @@
   position: fixed;
   margin-left: 15.5vh;
 }
+
+
+
+/* single card styles */
+
+.div_CardSingleButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_editCard{
+  background-color: #0cb4bd;
+  color: white;
+  padding: 1.5vh 2.5vh;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_editCard:hover {
+  background-color: rgb(24, 53, 72);
+}
+
+.btn_deleteCard{
+  background-color: #d70505;
+  color: white;
+  padding: 1.5vh 2.5vh;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_deleteCard:hover {
+  background-color: #ac0303;
+}
+
+
+
+
+.div_CardSingleImage{
+  min-height: 20vh;
+    margin: 2vh;
+    border: 1px solid black;
+}
