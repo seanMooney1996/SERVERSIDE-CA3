@@ -424,7 +424,18 @@
                 </div>
 
                 <div class="div_CardSingleButtons">
-                    <!-- Your Card Buttons Here -->
+                    <!-- Only show buttons to appropriate user -->
+
+                    @if(Auth::check() &&  (Auth::user()->id == $card->user_id || Auth::user()->userLevel == 2))
+                    <div><a href="{{ route('cards.edit', $card->id) }}">EDIT</a></div>
+                    <div>
+                        <form action="{{ route('cards.delete', $card->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit">DELETE</button>
+                        </form>
+                    </div>
+                    @endif
                 </div>
             </div>
             @endforeach

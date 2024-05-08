@@ -37,9 +37,13 @@ Route::get('/keepReading', function () {
 
 // edit
 
-Route::get('/editCard', function () {
-    return view('editCard');
-});
+Route::get('/cards/{card}/edit', [CardController::class, 'edit'])->name('cards.edit');
+Route::put('/cards/{card}', [CardController::class, 'update'])->name('cards.update');
+
+// delete
+
+Route::delete('/cards/{card}', [CardController::class, 'delete'])->name('cards.delete');
+
 
 // add
 Route::get('/addNewCard', function () {
