@@ -8,13 +8,18 @@
         <a href="login">Log In</a>
         <a href="register">Sign Up</a>
         @endguest
-        <a class="active" href="cards">Cards</a>
+        <a href="cards">Cards</a>
         <a href="welcome">Home</a>
         @auth
+
+        <a class="logoutbtnA">
+
         <form action="{{ route('logout') }}" method="POST">
             @csrf
-            <a><button type="submit">Logout</button></a>
+            <button type="submit" class="logoutbtn">Logout</button>
         </form>
+        </a>
+
         @endauth
     </div>
 </div>

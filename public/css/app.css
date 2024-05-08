@@ -15,6 +15,13 @@
   padding: 1%;
 }
 
+
+
+.logoutbtn{
+    background: center;
+    color: white;
+}
+
 .navBar_links a:hover {
   background-color: #EEEEEE;
   color: black;
