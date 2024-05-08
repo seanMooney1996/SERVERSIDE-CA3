@@ -29,15 +29,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="div_NavBar">
-            <div class="navBar_links">
-
-                <a href="login">Log In</a>
-                <a href="register">Sign Up</a>
-                <a class="active" href="cards">Cards</a>
-                <a href="welcome" href="">Home</a>
-            </div>
-        </div>
+    @include('navbar')
 
         <div class="div_keepReadingContainer">
             <h1> edit card</h1>
@@ -67,13 +59,13 @@
                         </div>
                         <br/>
                         <p><input type="text" id="published" name="published" placeholder="Published by..."></p>
-                    </div>    
+                    </div>
                 </div>
 
                 <button type="submit" class="btn_editFormSubmit">Submit</button>
 
                 </form>
 
-        </div>        
+        </div>
     </body>
 </html>

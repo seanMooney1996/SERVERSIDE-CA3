@@ -394,19 +394,7 @@
     </style>
 </head>
 <body class="antialiased">
-<div class="div_NavBar">
-    <div class="navBar_links">
-
-        <!--            checking for user level -->
-        @if(Auth::check() && Auth::user()->userLevel == 1)
-        <a href="addNewCard" class="leftie">Publish your card</a>
-        @endif
-        <a href="login">Log In</a>
-        <a href="register">Sign Up</a>
-        <a class="active" href="cards">Cards</a>
-        <a href="welcome">Home</a>
-    </div>
-</div>
+@include('navbar')
 
 <div>
     <div class="div_cardContainer">

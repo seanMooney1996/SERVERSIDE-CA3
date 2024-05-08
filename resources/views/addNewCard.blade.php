@@ -29,14 +29,8 @@
         </style>
     </head>
     <body class="antialiased">
-    <div class="div_NavBar">
-        <div class="navBar_links">
-            <a href="login">Log In</a>
-            <a href="register">Sign Up</a>
-            <a class="active" href="cards">Cards</a>
-            <a href="welcome" href="">Home</a>
-        </div>
-    </div>
+    @include('navbar')
+
 
     <div class="div_keepReadingContainer">
         <h1>Add Card</h1>
