@@ -24,33 +24,27 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="div_NavBar">
-            <div class="navBar_links">
-                <a href="login">Log In</a>
-                <a href="register">Sign Up</a>
-                <a href="cards">Cards</a>
-                <a class="active" href="">Home</a>
-            </div>
-        </div>
+    @include('navbar')
+
 
 
 
         <div>
             <img class="image_topHome" src="{{ asset('images/topImage.jpg') }}" alt="Magic: the Gathering">
         </div>
-        
+
 
 
         <div class="div_publisherContainer">
 
             <div class="div_publisherTextContainer" >
                 <h2 class="h2_publisher" >Are you ready to dive into world of Magic: The Gathering?</h2>
-                <h5 class="h4_publisher" >Browse our vast library of interesting Magic: The Gathering card pieces.</h4>
+                <h4 class="h4_publisher" >Browse our vast library of interesting Magic: The Gathering card pieces.</h4>
             </div>
             <div class="button_publisherContainer">
                  <a class="firstHomeButton" href="cards">Click here to explore!</a>
             </div>
-            
+
         </div>
 
 
@@ -61,12 +55,12 @@
 
 
 
-          
+
         <div class="div_publisherContainer">
 
             <div class="div_publisherTextContainer" >
                 <h2 class="h2_publisher" >Are you ready to unleash your creativity?</h2>
-                <h5 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
+                <h4 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
             </div>
             <div class="button_publisherContainer">
                  <a class="secondHomeButton" href="addNewCard">Publish a new card!</a>
@@ -87,7 +81,7 @@
            <div>
                 <div class="div_publisherTextContainer" >
                 <h2 class="h2_publisher" >Thank you for visiting our website.</h2>
-                <h5 class="h4_publisher" >We hope we had made you happy with our Magic: The Gathering card display.</h4>
+                <h4 class="h4_publisher" >We hope we had made you happy with our Magic: The Gathering card display.</h4>
                 </div>
            </div>
         </div>

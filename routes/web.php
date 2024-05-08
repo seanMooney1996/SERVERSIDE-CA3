@@ -55,12 +55,15 @@ Route::post('/addNewCard', [CardController::class, 'store'])->name('addNewCard.s
 
 
 
-
+// login
 Route::get('/login',  [LoginController::class, 'showLoginForm']);
 Route::middleware(['web'])->group(function () {
     Auth::routes();
 });
 
+
+// logout
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/login', [LoginController::class, 'showLoginForm']);
 Route::post('/login', [LoginController::class, 'login'])->name('login');

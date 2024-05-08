@@ -29,16 +29,8 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="div_NavBar">
-            <div class="navBar_links">
-                <a href="welcome" class="leftie" >Keep Reading bbygrl</a>
+    @include('navbar')
 
-                <a href="login">Log In</a>
-                <a href="register">Sign Up</a>
-                <a class="active" href="cards">Cards</a>
-                <a href="welcome" href="">Home</a>
-            </div>
-        </div>
 
         <div class="div_keepReadingContainer">
         <div class="div_CardSingleKeepReading">
@@ -51,12 +43,12 @@
                     </div>
 
                     <div class="div_CardSingleAttributes">
-                    
+
 
                         <div class="div_CardSingleDescription">
                             *Description bbygrl*
                         </div>
-                     
+
 
                         <div class="div_keepReadingPT">
                             <p>Power / Toughness</p>
@@ -64,11 +56,11 @@
                         <br/>
                         <p>Published by:</p>
 
-                    </div>    
-                
-                
+                    </div>
+
+
         </div>
-        </div>        
+        </div>
 
     </body>
 </html>
