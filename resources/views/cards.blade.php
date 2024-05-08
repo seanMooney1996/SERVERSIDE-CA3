@@ -403,12 +403,16 @@
             <div class="div_CardSingle">
                 <div class="div_CardSingleImage">
                     <?php $imageData = base64_encode($card->image_data); ?>
-                    <img src="data:image/jpeg;base64,{{ $imageData }}" alt="Card Image">
+                    <img src="data:image/jpeg;base64,{{ $imageData }}" class="cardImageFix" alt="Card Image">
                 </div>
 
                 <div class="div_CardSingleAttributes">
                     <p>Name: {{ $card->name }}</p>
                     <p>Published by: {{ $card->user->name }}</p>
+                    <p>Description: {{ $card->description }}</p>
+                    <p>Power: {{ $card->power }}</p>
+                    <p>Toughness: {{ $card->toughness }}</p>
+
                 </div>
 
                 <div class="div_CardSingleButtons">

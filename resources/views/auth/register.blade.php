@@ -1,4 +1,5 @@
-
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@include('navbar')
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">

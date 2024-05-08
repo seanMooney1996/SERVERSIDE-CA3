@@ -164,6 +164,7 @@
   margin-top: 3vh;
 }
 
+
 .div_cardsRow {
   display: flex;
   justify-content: space-evenly;
@@ -172,12 +173,16 @@
 }
 
 .div_CardSingle {
-  width: 30vh;
-  height: 42vh; 
+  width: 80vh;
+  height: 92vh;
   border: 1px solid #cecbcb;
   border-radius: 2vh;
   background-color: #f3f1f1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  padding-bottom: 2vh;
+  margin: 2vh;
+  font-size: xx-large;
 }
 
 
@@ -190,6 +195,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+.cardImageFix{
+  min-width: -webkit-fill-available;
+}
 
 
 
@@ -243,9 +252,7 @@
 
 
 .div_CardSingleImage{
-    min-height: 20vh;
     margin: 2vh;
-    border: 1px solid black;
 }
 
 .div_CardSingleImageKeepReading{
@@ -303,6 +310,7 @@
 
 .div_CardSingleAttributes{
   margin: 2vh;
+  overflow: auto;
 }
 .div_CardSingleAttributesKeepReading{
   margin: 2vh;
