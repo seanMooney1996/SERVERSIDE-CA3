@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn(['current_team_id', 'profile_photo_path']);
-            $table->integer('userLevel')->default(1); // Change default value if needed
+            $table->integer('userLevel')->default(1);
         });
     }
 
