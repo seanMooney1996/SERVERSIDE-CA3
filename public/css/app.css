@@ -173,8 +173,8 @@
 }
 
 .div_CardSingle {
-  width: 80vh;
-  height: 92vh;
+  width: 40vh;
+  height: 42vh;
   border: 1px solid #cecbcb;
   border-radius: 2vh;
   background-color: #f3f1f1;
@@ -182,7 +182,6 @@
   overflow: auto;
   padding-bottom: 2vh;
   margin: 2vh;
-  font-size: xx-large;
 }
 
 
@@ -337,6 +336,7 @@
   display: block;
   margin-top: 1rem;
   width: 100%;
+  color: black;
 }
 
 .loginBox{

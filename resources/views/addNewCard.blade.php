@@ -46,7 +46,6 @@
                 </div>
 
                 <div class="div_CardSingleImageKeepReading">
-                    *Image here: 189x147 dimensions bbygrl*
                     <input type="file" id="image" name="image_data" accept="image/*" required>
                     @error('image')
                     <p class="text-red-500">{{ $message }}</p>

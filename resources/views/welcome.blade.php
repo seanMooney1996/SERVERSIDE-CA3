@@ -73,11 +73,7 @@
 
         <div class="div_footer">
 
-           <div>
-                <p href="#">*link to Browse Cards*</p>
-                <p href="#">*link to Publish Cards*</p>
-                <p href="#">*link to Log Out*</p>
-           </div>
+        
            <div>
                 <div class="div_publisherTextContainer" >
                 <h2 class="h2_publisher" >Thank you for visiting our website.</h2>

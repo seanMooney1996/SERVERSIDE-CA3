@@ -24,7 +24,7 @@
 
             <div>
                 <label for="email" value="{{ __('Email') }}" >Email</label>
-                <x-input id="email" class="emailContainer" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                <input id="email" class="emailContainer" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             </div>
 
             <div >

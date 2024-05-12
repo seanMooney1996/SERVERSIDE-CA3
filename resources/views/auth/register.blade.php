@@ -14,22 +14,22 @@
 
             <div>
                  <label for="name" value="{{ __('Name') }}" >Name</label>
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                <input id="name" class="emailContainer" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
             <div class="mt-4">
                 <label for="email" value="{{ __('Email') }}" >Email</label>
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+                <input id="email" class="emailContainer" type="email" name="email" :value="old('email')" required autocomplete="username" />
             </div>
 
             <div class="mt-4">
                 <label for="password" value="{{ __('Password') }}" >Password</label>
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                <input id="password" class="emailContainer" type="password" name="password" required autocomplete="new-password" />
             </div>
 
             <div class="mt-4">
                 <label for="password_confirmation" value="{{ __('Confirm Password') }}" >Confirm Password</label>
-                <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
+                <input id="password_confirmation" class="emailContainer" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
