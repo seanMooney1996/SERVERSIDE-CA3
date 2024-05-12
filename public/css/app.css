@@ -15,6 +15,13 @@
   padding: 1%;
 }
 
+
+
+.logoutbtn{
+    background: center;
+    color: white;
+}
+
 .navBar_links a:hover {
   background-color: #EEEEEE;
   color: black;
@@ -142,4 +149,217 @@
 .footerHelperDiv{
   border-left: 1px solid black;
   width: 20vh;
+}
+
+
+
+
+/* card page */
+
+.div_cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: 3vh;
+}
+
+
+.div_cardsRow {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.div_CardSingle {
+  width: 40vh;
+  height: 42vh;
+  border: 1px solid #cecbcb;
+  border-radius: 2vh;
+  background-color: #f3f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  padding-bottom: 2vh;
+  margin: 2vh;
+}
+
+
+.div_CardSingleKeepReading{
+  width: 60vh;
+  height: 84vh; 
+  border: 1px solid #cecbcb;
+  border-radius: 2vh;
+  background-color: #f3f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.cardImageFix{
+  min-width: -webkit-fill-available;
+}
+
+
+
+
+.leftie{
+  position: fixed;
+  margin-left: 15.5vh;
+}
+
+
+
+/* single card styles */
+
+.div_CardSingleButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn_editCard{
+  background-color: #0cb4bd;
+  color: white;
+  padding: 1vh 2vh;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_editCard:hover {
+  background-color: rgb(24, 53, 72);
+}
+
+.btn_deleteCard{
+  background-color: #d70505;
+  color: white;
+  padding: 1vh 2vh;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_deleteCard:hover {
+  background-color: #ac0303;
+}
+
+
+
+
+.div_CardSingleImage{
+    margin: 2vh;
+}
+
+.div_CardSingleImageKeepReading{
+  min-height: 40vh;
+  margin: 4vh;
+  border: 2px solid black;
+  margin-top: 2vh;
+}
+
+.div_CardSingleDescription{
+  min-height: 20vh;
+  margin: 1vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  border: 2px solid black;
+}
+
+#description{
+  min-height: 17vh;
+  min-width: 100%;
+  resize: none;
+  margin: 0;
+}
+
+
+.btn_editFormSubmit{
+  background-color: #0cb4bd;
+  color: white;
+  padding: 1vh 2vh;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 4vh;
+}
+
+.btn_editFormSubmit:hover {
+  background-color: rgb(24, 53, 72);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div_CardSingleAttributes{
+  margin: 2vh;
+  overflow: auto;
+}
+.div_CardSingleAttributesKeepReading{
+  margin: 2vh;
+  margin-left: 4vh;
+  margin-bottom: 0;
+}
+
+.div_keepReadingContainer{
+  margin-top: 2vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+
+.div_keepReadingPT{
+  float: right;
+}
+
+
+.emailContainer{
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  color: black;
+}
+
+.loginBox{
+  width: 100%;
+  max-width: 28rem; 
+  margin-top: 1.5rem; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding-left: 1.5rem; 
+  padding-right: 1.5rem; 
+  padding-top: 1rem; 
+  padding-bottom: 1rem; 
+  background-color: #222831;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border-radius: 0.5rem; 
+  color: rgb(255, 255, 255);
+}
+
+.LoginButton{
+
+}
+.LoginButton:hover{
+    color:#0cb4bd;
+  
 }

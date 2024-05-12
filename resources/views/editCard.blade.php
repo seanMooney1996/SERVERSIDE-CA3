@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Home</title>
+        <title>Cards</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,69 +17,55 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-EXAMPLEHASH" crossorigin="anonymous" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
             }
+
         </style>
     </head>
     <body class="antialiased">
     @include('navbar')
 
+        <div class="div_keepReadingContainer">
+            <h1> edit card</h1>
 
+        <form>
 
+        <div class="div_CardSingleKeepReading">
+                    <div class="div_CardSingleAttributesKeepReading">
+                    <input type="text" id="name" name="name" placeholder="Name...">
+                    </div>
 
-        <div>
-            <img class="image_topHome" src="{{ asset('images/topImage.jpg') }}" alt="Magic: the Gathering">
-        </div>
+                    <div class="div_CardSingleImageKeepReading">
+                        *Image here: 189x147 dimensions bbygrl*
+                    </div>
 
+                    <div class="div_CardSingleAttributes">
 
+                        <div class="div_CardSingleDescription">
+                            <textarea id="description" name="description" placeholder="Enter your description here..." ></textarea>
+                        </div>
 
-        <div class="div_publisherContainer">
-
-            <div class="div_publisherTextContainer" >
-                <h2 class="h2_publisher" >Are you ready to dive into world of Magic: The Gathering?</h2>
-                <h4 class="h4_publisher" >Browse our vast library of interesting Magic: The Gathering card pieces.</h4>
-            </div>
-            <div class="button_publisherContainer">
-                 <a class="firstHomeButton" href="cards">Click here to explore!</a>
-            </div>
-
-        </div>
-
-
-
-        <div>
-            <img class="image_topHome" src="{{ asset('images/mtg_top2.jpg') }}" alt="Magic: the Gathering">
-        </div>
-
-
-
-
-        <div class="div_publisherContainer">
-
-            <div class="div_publisherTextContainer" >
-                <h2 class="h2_publisher" >Are you ready to unleash your creativity?</h2>
-                <h4 class="h4_publisher" >Join our community of thousands of passionate publishers and help shape the world of Magic: The Gathering.</h4>
-            </div>
-            <div class="button_publisherContainer">
-                 <a class="secondHomeButton" href="addNewCard">Publish a new card!</a>
-            </div>
-        </div>
-
-        <div>
-            <img class="image_topHome" src="{{ asset('images/mtg_top3.jpg') }}" alt="Magic: the Gathering">
-        </div>
-
-        <div class="div_footer">
-
-        
-           <div>
-                <div class="div_publisherTextContainer" >
-                <h2 class="h2_publisher" >Thank you for visiting our website.</h2>
-                <h4 class="h4_publisher" >We hope we had made you happy with our Magic: The Gathering card display.</h4>
+                        <div class="div_keepReadingPT">
+                            <p><input type="text" id="power" name="power" placeholder="Power...">
+                            </p>
+                            <p><input type="text" id="toughness" name="toughness" placeholder="Toughness...">
+                            </p>
+                        </div>
+                        <br/>
+                        <p><input type="text" id="published" name="published" placeholder="Published by..."></p>
+                    </div>
                 </div>
-           </div>
+
+                <button type="submit" class="btn_editFormSubmit">Submit</button>
+
+                </form>
+
         </div>
     </body>
 </html>
